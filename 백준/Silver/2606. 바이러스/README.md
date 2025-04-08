@@ -2,6 +2,9 @@
 
 [문제 링크](https://www.acmicpc.net/problem/2606) 
 
+### 풀이
+단순 BFS 탐색후, 탐색한 만큼 cnt를 증가시키면 된다.
+
 ### 성능 요약
 
 메모리: 1116 KB, 시간: 0 ms
