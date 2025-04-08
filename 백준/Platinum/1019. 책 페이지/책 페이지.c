@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-long long book[10] = { 0 };
-void add(long long n, long long mul) {
+int book[10] = { 0 };
+void add(int n, int mul) {
     while(n > 0) {
         book[n % 10] += mul;
         n /= 10;
@@ -9,7 +9,7 @@ void add(long long n, long long mul) {
 }
 
 int main(void) {
-    long long st = 1, n, mul = 1; scanf("%lld", &n);
+    int st = 1, n, mul = 1; scanf("%d", &n);
 
     while(st <= n) {
         // 0 ~ 9로 맞춰서 계산 (0 ~ 9가 자릿수 * (n / 10 - st / 10 + 1)만큼 나오게 된다)
@@ -23,7 +23,7 @@ int main(void) {
             add(n, mul); --n;
         }
         // 자릿수 계산
-        long long tmp = (n / 10 - st / 10 + 1);
+        int tmp = (n / 10 - st / 10 + 1);
         for(int i = 0; i < 10; ++i) {
             book[i] += mul * tmp;
         }
@@ -31,7 +31,7 @@ int main(void) {
         mul *= 10; st /= 10; n /= 10;
     }
 
-    for(int i = 0; i < 10; ++i) printf("%lld ", book[i]);
+    for(int i = 0; i < 10; ++i) printf("%d ", book[i]);
 
 	return 0;
 }
