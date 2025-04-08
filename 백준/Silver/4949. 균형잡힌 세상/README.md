@@ -2,6 +2,10 @@
 
 [문제 링크](https://www.acmicpc.net/problem/4949) 
 
+### 풀이
+
+stack을 이용한 괄호 검사 문제이다. </br>
+
 ### 성능 요약
 
 메모리: 1116 KB, 시간: 4 ms
