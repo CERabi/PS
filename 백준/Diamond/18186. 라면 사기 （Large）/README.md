@@ -2,6 +2,11 @@
 
 [문제 링크](https://www.acmicpc.net/problem/18186) 
 
+### 풀이
+
+[18185 라면 사기 (Small) 문제](https://www.acmicpc.net/problem/18185)와 동일한 방법으로 접근이 가능하다.</br>
+ramen[i + 1] > ramen[i + 2]일땐 2개를 먼저 처리하는것이 유리하다는 것과, 배열의 범위, 최댓값의 범위에 주의하며 풀면 된다.
+
 ### 성능 요약
 
 메모리: 8808 KB, 시간: 164 ms
