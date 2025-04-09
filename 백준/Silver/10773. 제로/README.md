@@ -2,6 +2,10 @@
 
 [문제 링크](https://www.acmicpc.net/problem/10773) 
 
+### 풀이
+
+정수가 0일때 stack의 top이 > 0임을 보장하므로 그냥 0이 아닌 정수가 들어오면 stack에 push, 0일 땐 pop 하고 처리가 끝난 후 stack을 찍어주면 된다. </br>
+
 ### 성능 요약
 
 메모리: 1384 KB, 시간: 8 ms
