@@ -2,6 +2,13 @@
 
 [문제 링크](https://www.acmicpc.net/problem/1874) 
 
+### 풀이
+
+다음에 stack에 들어갈 수를 now, 들어온 수를 tmp라고 할 때 </br>
+1. tmp == now -> 바로 stack에 들어가니 +- </br>
+2. tmp < now -> stack[top - 1]이 다른 수면 pop해도 다른게 나오므로 break, 아니면 그냥 pop</br>
+3. tmp > now -> 같아질때까지 계속 push 하면서 +, 마지막에 pop하고 - </br>
+
 ### 성능 요약
 
 메모리: 1584 KB, 시간: 24 ms
