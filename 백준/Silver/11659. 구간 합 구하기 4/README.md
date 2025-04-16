@@ -2,6 +2,10 @@
 
 [문제 링크](https://www.acmicpc.net/problem/11659) 
 
+### 풀이
+
+st~ed의 구간 합은 선형 누적합 배열 sum에서 sum[ed] - sum[st - 1]로 구현할 수 있다.
+
 ### 성능 요약
 
 메모리: 1384 KB, 시간: 56 ms
