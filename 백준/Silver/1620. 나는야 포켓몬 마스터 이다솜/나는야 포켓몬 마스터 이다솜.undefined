@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+int main(void) {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n, m; cin >> n >> m;
+
+    unordered_map<string, int> sti;
+    unordered_map<int, string> its;
+    for(int i = 1; i <= n; ++i) {
+        string str; cin >> str;
+        sti.insert({str, i});
+        its.insert({i, str});
+    }
+
+    while(m--) {
+        string str; cin >> str;
+        if(isdigit(str[0])) cout << its[stoi(str)] << "\n";
+        else cout << sti[str] << "\n";
+    }
+
+    return 0;
+}
