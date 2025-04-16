@@ -2,6 +2,11 @@
 
 [문제 링크](https://www.acmicpc.net/problem/2579) 
 
+### 풀이
+
+dp 문제이다. 점화식은 dp[i] = max(dp[i - 2] + stair[i], dp[i - 3] + stair[i - 1] + stair[i](i >= 3)이다. </br>
+초기값으론 dp[1] = stair[1], dp[2] = stair[2]를 주면 된다.
+
 ### 성능 요약
 
 메모리: 1116 KB, 시간: 0 ms
