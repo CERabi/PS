@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <list>
+
+using namespace std;
+
+int main(void) {
+    cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    int n, m; cin >> n >> m;
+
+    unordered_map<string, int> who;
+    for(int i = 0; i < n; ++i) {
+        string str1; cin >> str1;
+        who.insert({ str1, 1 });
+    }
+
+    list<string> dap;
+    while(m--) {
+        string str; cin >> str;
+        if(who.find(str) != who.end()) dap.push_back(str);
+    }
+
+    dap.sort();
+    int len = dap.size();
+    cout << len << "\n";
+    for(string str : dap) {
+        cout << str << "\n";
+    }
+
+    return 0;
+}
