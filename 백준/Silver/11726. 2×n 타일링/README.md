@@ -4,8 +4,7 @@
 
 ### 풀이
 
-![image](https://github.com/user-attachments/assets/52ba3075-43b9-4d14-b0a2-875ad72c9173)
-
+![1172611727](https://github.com/user-attachments/assets/93c004cd-349b-4acb-8a45-cc05ef601453)
 
 ### 성능 요약
 
