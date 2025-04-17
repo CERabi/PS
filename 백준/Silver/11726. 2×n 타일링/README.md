@@ -2,6 +2,11 @@
 
 [문제 링크](https://www.acmicpc.net/problem/11726) 
 
+### 풀이
+
+![image](https://github.com/user-attachments/assets/05ad8f0c-18bc-4a3c-9dfc-9c62578ff9a5)
+
+
 ### 성능 요약
 
 메모리: 1112 KB, 시간: 0 ms
